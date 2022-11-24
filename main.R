@@ -21,8 +21,10 @@ theme_1 <- theme_bw() +
         plot.title.position = "plot")
 
 ### Importing data
-trade <- read_csv("data/trade.csv")
-gravity <- read_csv("data/gravity.csv")
+trade <- read.csv(unz('data/trade.zip', 'trade.csv'), 
+                    skipNul = T)
+gravity <- read.csv(unz('data/gravity.zip', 'gravity.csv'), 
+                  skipNul = T)
 
 
 ### Task 2: Data manipulation
