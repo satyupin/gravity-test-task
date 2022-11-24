@@ -9,7 +9,7 @@ library(xtable)
 source("functions/collect_coefs.R")
 
 # Set your wd here
-setwd("~/Desktop/predoc/adao_kehre_lorenzoni")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 theme_1 <- theme_bw() + 
   theme(axis.line = element_line(colour = "black"),
